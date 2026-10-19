@@ -14,7 +14,6 @@ import routerProvider, {
   UnsavedChangesNotifier,
   DocumentTitleHandler,
 } from "@refinedev/react-router";
-import { dataProvider } from "./providers/data";
 import { Layout } from "./components/refine-ui/layout/layout";
 import { useNotificationProvider } from "./components/refine-ui/notification/use-notification-provider";
 import { Toaster } from "./components/refine-ui/notification/toaster";
@@ -24,6 +23,7 @@ import Dashboard from "@/pages/Dashboard.tsx";
 import {BookOpen, Home} from "lucide-react";
 import SubjectList from "@/pages/subjects/list.tsx";
 import SubjectCreate from "@/pages/subjects/Create.tsx";
+import {dataProvider} from "@/providers/data.ts";
 
 function App() {
   return (
