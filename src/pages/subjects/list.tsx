@@ -4,7 +4,7 @@ import {Breadcrumb} from "@/components/refine-ui/layout/breadcrumb.tsx";
 import {SearchIcon} from "lucide-react";
 import {Input} from "@/components/ui/input.tsx";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select.tsx";
-import {DEPARTMENT_OPTIONS, DEPARTMENTS} from "@/constants";
+import {DEPARTMENT_OPTIONS} from "@/constants";
 import {CreateButton} from "@/components/refine-ui/buttons/create.tsx";
 import {DataTable} from "@/components/refine-ui/data-table/data-table.tsx";
 import {useTable} from "@refinedev/react-table";

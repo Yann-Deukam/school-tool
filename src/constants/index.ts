@@ -1,8 +1,17 @@
+// Values must match the `department` field in MOCK_SUBJECTS exactly,
+// because the list page applies the selection as an `eq` filter.
 export const DEPARTMENTS = [
-    'CS','Math','English'
-]
+    "Computer Science",
+    "Software Engineering",
+    "Graphic Design",
+] as const;
 
-export const DEPARTMENT_OPTIONS = DEPARTMENTS.map((dept) => ({
-    value: dept,
-    label: dept,
-}))
+export type Department = (typeof DEPARTMENTS)[number];
+
+export const DEPARTMENT_OPTIONS = [
+    { value: "all", label: "All departments" },
+    ...DEPARTMENTS.map((department) => ({
+        value: department,
+        label: department,
+    })),
+];
